@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Shooting Monkeys</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script language="javascript" type="text/javascript" src="engine.js"></script>
+	</head>
+	<body onload="init()">
+		<div id="gameWindow">
+			<div id="introScreen">				
+				<div id="introScreenContent">
+					<h1>Hit Alien</h1>
+					<div id="btnStart" class="button" onclick="startGame()">Start Game</div>
+				</div>
+			</div>
+			<div id="winScreen">
+				<div id="winScreenContent">
+					<h1 id="txtWinTitle"> GAME OVER </h1>
+					<h2 id="txtWinMessage"> YOU WIN </h2>
+					<div id="btnReplay" class="button" onclick="replay()">Play Again</div>
+				</div>
+			</div>
+			<div id="loseScreen">
+					<div id="loseScreenContent">
+						<h1 id="txtLoseTitle">GAME OVER</h1>
+						<h2 id="txtLoseMessage">LOSER</h2>
+						<div id="btnReplay" class="button" onclick="replay()"> Play Again</div>
+					</div>
+			</div>
+			<img src="alien.jpg" id="alien_01" class="alien" onclick="hitAlien()">
+			<div id="output" style="color: white; padding: 20px;"></div>
+		</div>
+
+	</body>
+</html>
+
